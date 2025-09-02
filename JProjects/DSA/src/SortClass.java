@@ -64,10 +64,10 @@ public class SortClass {
 
     }
 
-    private static void merge(int[] arr, int left, int mid, int right){
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
-    }
+    // private static void merge(int[] arr, int left, int mid, int right){
+    //     int n1 = mid - left + 1;
+    //     int n2 = right - mid;
+    // }
 
     public static void main(String[] args) {
         int[] arr = { 5, 3, 8, 2, 4 };

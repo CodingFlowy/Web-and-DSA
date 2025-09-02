@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <body onload="alert('Page Loaded!')"></body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+    </header>
+
+    <main>
+        <p>This is a simple paragraph of text to show how a web page is structured. We will use CSS to make it look
+            nice.</p>
+        <p>Learn more about web development by visiting the <a href="https://www.w3schools.com/">W3Schools website</a>.
+        </p>
+    </main>
+    <div>
+        <h1>----------------------------JAVASCRIPT------------------------------</h1>
+        <div>
+            <button onclick="alert('Hello!')">Click Me</button>
+            
+
+        </div>
+    </div>
+
+</body>
+<script>
+    // JavaScript inside HTML
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let now = new Date();
+    let day = days[now.getDay()];
+    let month = months[now.getMonth()];
+    let date = now.getDate();
+    let year = now.getFullYear();
+    document.write(`<h2>Today is ${day}, ${month} ${date}, ${year}</h2>`);
+
+
+    function TypeCheck(value){
+        return typeof(value);
+    }
+
+    document.write(TypeCheck(5));
+    document.write(" ");
+    document.write(TypeCheck("Hello"));
+    document.write(" ");
+    document.write(TypeCheck(true));
+    document.write(" ");
+    document.write(TypeCheck({name: "John", age: 30}));
+    document.write(" ");
+    document.write(TypeCheck([1, 2, 3, 4, 5]));
+    document.write(" ");
+    document.write(TypeCheck(null));
+    document.write(" ");
+    document.write(TypeCheck(undefined));
+    document.write(" ");
+    document.write(TypeCheck(function(){}));
+    document.write(" ");
+    document.write(TypeCheck(Symbol("id")));
+    document.write(" ");
+    document.write(TypeCheck(BigInt(12345678901234567890n)));
+
+</script>
+
+</html>
