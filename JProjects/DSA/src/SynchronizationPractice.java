@@ -2,17 +2,16 @@ class OnlineBank{
     int balance = 1000;
 
     synchronized void Withdraw(int amount){
-        if(balance >= amount){
-            System.out.println("Withdrawn " + amount);
+        if(balance >= amount) {
+            System.out.println(Thread.currentThread().getName() + " is withdrawing " + amount);
             balance -= amount;
-            System.out.println("Remaining balance: " + balance);
         } else {
-            System.out.println("Insufficient balance");
+            System.out.println("Insufficient balance for " + Thread.currentThread().getName());
         }
     }
 }
 
-public class tempCodeRunnerFile {
+public class SynchronizationPractice {
     public static void main(String[] args) {
         OnlineBank account = new OnlineBank();
 
