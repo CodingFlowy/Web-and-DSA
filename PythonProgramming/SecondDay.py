@@ -92,6 +92,38 @@ Traceback (most recent call last):
 ... 
 __main__.CustomError: An error occurred
 '''
+#___________________Custom Error Example________________
+class Error(Exception):
+    pass
+
+class ValueTooSmall(Error):
+    #raised when value is too small
+    pass
+class ValueTooLarge(Error):
+    #raised when value is too large
+    pass
+
+number = 10
+while True:
+    try:
+        i_num =int(input("Enter a number: "))
+        if i_num < number:
+            raise ValueTooSmall
+        elif i_num > number:
+            raise ValueTooLarge
+        break
+    except ValueTooSmall:
+        print("This value is small, try again")
+        print()
+    except ValueTooLarge:
+        print("This value is big, try again")
+print("Congratulations, you guessed it right")
+
+
+
+
+
+    
 #-------------
 # creating a list containing elements belonging to different data types 
 
