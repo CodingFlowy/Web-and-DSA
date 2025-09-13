@@ -120,19 +120,8 @@ while True:
 print("Congratulations, you guessed it right")
 
 
-
+            
 
 
     
 #-------------
-# creating a list containing elements belonging to different data types 
-
-'''
-sample_list = [1,"ABC",['k','j']] 
-print(sample_list)
-import array 
-sample_array = array.array('i', [4, 5, 6]) 
-# accessing elements of array 
-for i in sample_array: 
- print(i)
- '''
